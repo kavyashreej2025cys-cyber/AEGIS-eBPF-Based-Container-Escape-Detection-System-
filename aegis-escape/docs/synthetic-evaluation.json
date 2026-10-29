@@ -1,0 +1,27 @@
+{
+  "scope": "Synthetic-only smoke evaluation; not real attack accuracy",
+  "benign_samples": 500,
+  "benign_false_positive_rate": 0.022,
+  "scenarios": {
+    "namespace": {
+      "autoencoder_rate": 1.0,
+      "rule_rate": 1.0,
+      "hybrid_union_rate": 1.0
+    },
+    "runtime-socket": {
+      "autoencoder_rate": 1.0,
+      "rule_rate": 1.0,
+      "hybrid_union_rate": 1.0
+    },
+    "mount-probe": {
+      "autoencoder_rate": 1.0,
+      "rule_rate": 1.0,
+      "hybrid_union_rate": 1.0
+    },
+    "unknown-burst": {
+      "autoencoder_rate": 1.0,
+      "rule_rate": 0.0,
+      "hybrid_union_rate": 1.0
+    }
+  }
+}

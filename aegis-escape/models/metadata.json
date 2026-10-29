@@ -1,0 +1,51 @@
+{
+  "created_at": 1791251279.6143188,
+  "provenance": "synthetic demonstration baseline",
+  "window_seconds": 5,
+  "train_windows": 1260,
+  "calibration_windows": 270,
+  "metrics": {
+    "held_out_benign_windows": 270,
+    "benign_false_positive_rate": 0.037037037037037035,
+    "initial_loss": 0.12991234370833768,
+    "final_loss": 0.0010447745414263797,
+    "synthetic_anomaly_detection_rate": {
+      "namespace": 1.0,
+      "runtime-socket": 1.0,
+      "mount-probe": 1.0,
+      "unknown-burst": 1.0
+    }
+  },
+  "features": [
+    "count_execve",
+    "count_openat",
+    "count_connect",
+    "count_mount",
+    "count_umount2",
+    "count_setns",
+    "count_unshare",
+    "count_ptrace",
+    "count_bpf",
+    "count_clone",
+    "count_clone3",
+    "count_chmod",
+    "count_fchmodat",
+    "count_chroot",
+    "failed",
+    "root",
+    "unique_pids",
+    "sensitive_path",
+    "runtime_socket",
+    "shell"
+  ],
+  "architecture": [
+    20,
+    32,
+    16,
+    4,
+    16,
+    32,
+    20
+  ],
+  "threshold": 0.0012298889413695315
+}

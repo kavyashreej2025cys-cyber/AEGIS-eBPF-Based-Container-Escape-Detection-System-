@@ -1,0 +1,16 @@
+services:
+  aegis:
+    build: .
+    network_mode: host
+    volumes:
+      - aegis-data:/app/data
+    environment:
+      AEGIS_TOKEN: ${AEGIS_TOKEN:-demo-local-token}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/api/health', timeout=2)"]
+      interval: 20s
+      timeout: 3s
+      retries: 3
+volumes:
+  aegis-data:
